@@ -10,13 +10,11 @@
   }
 
   body {
-    @apply text-gray-800 bg-gray-50;
-    font-family: 'Open Sans', system-ui, sans-serif;
+    @apply font-body text-neutral-dark bg-neutral-light;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold text-[#003366];
-    font-family: 'Montserrat', system-ui, sans-serif;
+    @apply font-heading font-bold text-primary;
   }
 }
 
@@ -26,19 +24,19 @@
   }
 
   .btn-primary {
-    @apply bg-[#003366] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#00284d] transition-colors duration-200 inline-flex items-center justify-center gap-2;
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-colors duration-200 inline-flex items-center justify-center gap-2;
   }
 
   .btn-secondary {
-    @apply bg-[#4CAF50] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#3d8b40] transition-colors duration-200 inline-flex items-center justify-center gap-2;
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold hover:bg-secondary-dark transition-colors duration-200 inline-flex items-center justify-center gap-2;
   }
 
   .btn-accent {
-    @apply bg-[#FFB300] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#e6a200] transition-colors duration-200 inline-flex items-center justify-center gap-2;
+    @apply bg-accent text-black px-6 py-3 rounded-lg font-semibold hover:bg-accent-dark transition-colors duration-200 inline-flex items-center justify-center gap-2;
   }
 
   .btn-outline {
-    @apply border-2 border-[#003366] text-[#003366] px-6 py-3 rounded-lg font-semibold hover:bg-[#003366] hover:text-white transition-all duration-200 inline-flex items-center justify-center gap-2;
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary hover:text-white transition-all duration-200 inline-flex items-center justify-center gap-2;
   }
 
   .card {
@@ -50,33 +48,32 @@
   }
 
   .section-subheading {
-    @apply text-lg md:text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto;
+    @apply text-lg md:text-xl text-neutral-dark text-center mb-12 max-w-3xl mx-auto;
   }
 
   .service-icon {
-    @apply w-16 h-16 bg-[#4CAF50]/10 rounded-full flex items-center justify-center text-[#4CAF50] mb-4;
+    @apply w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center text-secondary mb-4;
   }
 
   .badge {
-    @apply inline-block px-3 py-1 bg-[#4CAF50]/10 text-[#4CAF50] rounded-full text-sm font-medium;
+    @apply inline-block px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium;
   }
 }
 
 @layer utilities {
   .gradient-primary {
-    background: linear-gradient(to bottom right, #003366, #00284d);
+    @apply bg-gradient-to-br from-primary to-primary-dark;
   }
 
   .gradient-secondary {
-    background: linear-gradient(to bottom right, #4CAF50, #3d8b40);
+    @apply bg-gradient-to-br from-secondary to-secondary-dark;
   }
 
   .gradient-accent {
-    background: linear-gradient(to bottom right, #FFB300, #e6a200);
+    @apply bg-gradient-to-br from-accent to-accent-dark;
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent;
-    background: linear-gradient(to right, var(--tw-gradient-stops));
+    @apply bg-clip-text text-transparent bg-gradient-to-r;
   }
 }

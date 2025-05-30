@@ -59,8 +59,8 @@ export default function CertificationsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Certifications & Compliance</h2>
-          <p className="text-lg md:text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="section-heading">Certifications & Compliance</h2>
+          <p className="section-subheading">
             ISO certified with complete statutory compliance, ensuring quality, 
             safety, and legal adherence in all our operations.
           </p>
@@ -81,7 +81,7 @@ export default function CertificationsSection() {
                 <div className={`w-16 h-16 ${cert.bgColor} rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <cert.icon className={`w-8 h-8 ${cert.color}`} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                <h3 className="text-lg font-heading font-semibold mb-2">
                   {cert.title}
                 </h3>
                 <p className="text-sm text-gray-600">
@@ -99,7 +99,7 @@ export default function CertificationsSection() {
           viewport={{ once: true }}
           className="bg-gray-50 rounded-2xl p-8 lg:p-12"
         >
-          <h3 className="text-2xl font-bold text-center mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <h3 className="text-2xl font-heading font-bold text-center mb-8">
             Complete Statutory Compliance
           </h3>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -112,7 +112,7 @@ export default function CertificationsSection() {
                 transition={{ delay: index * 0.05 }}
                 className="flex items-center gap-3"
               >
-                <CheckCircle className="text-[#4CAF50] flex-shrink-0" size={20} />
+                <CheckCircle className="text-secondary flex-shrink-0" size={20} />
                 <span className="text-gray-700">{area}</span>
               </motion.div>
             ))}
@@ -126,33 +126,33 @@ export default function CertificationsSection() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <h3 className="text-2xl font-bold text-center mb-8" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+          <h3 className="text-2xl font-heading font-bold text-center mb-8">
             Why Our Certifications Matter
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#003366]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Shield className="w-8 h-8 text-[#003366]" />
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="w-8 h-8 text-primary" />
               </div>
-              <h4 className="font-semibold mb-2" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Risk Mitigation</h4>
+              <h4 className="font-heading font-semibold mb-2">Risk Mitigation</h4>
               <p className="text-sm text-gray-600">
                 Complete compliance protects your organization from legal risks and penalties
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#4CAF50]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Award className="w-8 h-8 text-[#4CAF50]" />
+              <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Award className="w-8 h-8 text-secondary" />
               </div>
-              <h4 className="font-semibold mb-2" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Quality Assurance</h4>
+              <h4 className="font-heading font-semibold mb-2">Quality Assurance</h4>
               <p className="text-sm text-gray-600">
                 ISO certification ensures consistent, high-quality service delivery
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#FFB300]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <FileCheck className="w-8 h-8 text-[#FFB300]" />
+              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <FileCheck className="w-8 h-8 text-accent" />
               </div>
-              <h4 className="font-semibold mb-2" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Peace of Mind</h4>
+              <h4 className="font-heading font-semibold mb-2">Peace of Mind</h4>
               <p className="text-sm text-gray-600">
                 Focus on your core business while we handle all compliance matters
               </p>

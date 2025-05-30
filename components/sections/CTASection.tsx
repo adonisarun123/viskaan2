@@ -4,7 +4,7 @@ export default function CTASection() {
   return (
     <section className="py-16 lg:py-24 gradient-primary text-white">
       <div className="container-custom text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+        <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
           Ready to Transform Your Facility Management?
         </h2>
         <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto">
@@ -14,7 +14,7 @@ export default function CTASection() {
           <Link href="/contact" className="btn-accent">
             Get Free Consultation
           </Link>
-          <Link href="/services" className="btn-outline !border-white !text-white hover:!bg-white hover:!text-[#003366]">
+          <Link href="/services" className="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary">
             Explore Services
           </Link>
         </div>

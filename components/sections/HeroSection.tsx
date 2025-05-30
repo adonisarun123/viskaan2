@@ -32,9 +32,9 @@ export default function HeroSection() {
               <span className="text-sm font-medium">ISO 9001:2015 Certified</span>
             </motion.div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
               Excellence in
-              <span className="block text-[#FFB300]">Facility Management</span>
+              <span className="block text-accent">Facility Management</span>
               Since 1998
             </h1>
 
@@ -49,7 +49,7 @@ export default function HeroSection() {
                 Explore Services
                 <ArrowRight className="w-5 h-5" />
               </Link>
-              <Link href="/contact" className="btn-outline !border-white !text-white hover:!bg-white hover:!text-[#003366]">
+              <Link href="/contact" className="btn-outline !border-white !text-white hover:!bg-white hover:!text-primary">
                 Get Free Quote
               </Link>
             </div>
@@ -62,7 +62,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.4 }}
                 className="text-center sm:text-left"
               >
-                <div className="text-3xl md:text-4xl font-bold text-[#FFB300]">25+</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent">25+</div>
                 <div className="text-sm text-gray-200">Years of Excellence</div>
               </motion.div>
               <motion.div
@@ -71,7 +71,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.5 }}
                 className="text-center sm:text-left"
               >
-                <div className="text-3xl md:text-4xl font-bold text-[#FFB300]">500+</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent">500+</div>
                 <div className="text-sm text-gray-200">Happy Clients</div>
               </motion.div>
               <motion.div
@@ -80,7 +80,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.6 }}
                 className="text-center sm:text-left"
               >
-                <div className="text-3xl md:text-4xl font-bold text-[#FFB300]">10K+</div>
+                <div className="text-3xl md:text-4xl font-bold text-accent">10K+</div>
                 <div className="text-sm text-gray-200">Workforce</div>
               </motion.div>
             </div>
@@ -108,12 +108,12 @@ export default function HeroSection() {
               <motion.div
                 animate={{ y: [0, -20, 0] }}
                 transition={{ repeat: Infinity, duration: 3 }}
-                className="absolute -top-10 -right-10 w-32 h-32 bg-[#FFB300] rounded-full opacity-20 blur-2xl"
+                className="absolute -top-10 -right-10 w-32 h-32 bg-accent rounded-full opacity-20 blur-2xl"
               />
               <motion.div
                 animate={{ y: [0, 20, 0] }}
                 transition={{ repeat: Infinity, duration: 4 }}
-                className="absolute -bottom-10 -left-10 w-40 h-40 bg-[#4CAF50] rounded-full opacity-20 blur-2xl"
+                className="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary rounded-full opacity-20 blur-2xl"
               />
             </div>
           </motion.div>

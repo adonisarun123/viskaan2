@@ -34,8 +34,8 @@ export default function IndustriesSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Industries We Serve</h2>
-          <p className="text-lg md:text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="section-heading">Industries We Serve</h2>
+          <p className="section-subheading">
             Specialized facility management solutions tailored for diverse industry verticals 
             with deep domain expertise and compliance knowledge.
           </p>
@@ -56,10 +56,10 @@ export default function IndustriesSection() {
                 <div className={`w-16 h-16 ${industry.bgColor} rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                   <industry.icon className={`w-8 h-8 ${industry.color}`} />
                 </div>
-                <h3 className="font-semibold text-gray-800 mb-2" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                <h3 className="font-heading font-semibold text-gray-800 mb-2">
                   {industry.name}
                 </h3>
-                <p className="text-2xl font-bold text-[#003366]">
+                <p className="text-2xl font-bold text-primary">
                   {industry.count}
                 </p>
                 <p className="text-sm text-gray-600 mt-1">Clients Served</p>

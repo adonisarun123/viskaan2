@@ -62,14 +62,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-[#003366] rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-xl">V</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-[#003366]" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+              <h1 className="text-xl font-heading font-bold text-primary">
                 Viskaan Associates
               </h1>
-              <p className="text-xs text-gray-700">Facility Management Excellence</p>
+              <p className="text-xs text-neutral-dark">Facility Management Excellence</p>
             </div>
           </Link>
 
@@ -87,8 +87,8 @@ export default function Navigation() {
                   className={cn(
                     "px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center gap-1",
                     isActive(item.href)
-                      ? "text-[#003366] bg-[#003366]/10"
-                      : "text-gray-700 hover:text-[#003366] hover:bg-[#003366]/5"
+                      ? "text-primary bg-primary/10"
+                      : "text-neutral-dark hover:text-primary hover:bg-primary/5"
                   )}
                 >
                   {item.name}
@@ -112,7 +112,7 @@ export default function Navigation() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:text-[#003366] hover:bg-[#003366]/5 transition-colors duration-200"
+                            className="block px-4 py-2 text-sm text-neutral-dark hover:text-primary hover:bg-primary/5 transition-colors duration-200"
                           >
                             {subItem.name}
                           </Link>
@@ -129,7 +129,7 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             <a
               href="tel:+919876543210"
-              className="hidden sm:flex items-center gap-2 text-[#003366] hover:text-[#00284d] transition-colors"
+              className="hidden sm:flex items-center gap-2 text-primary hover:text-primary-dark transition-colors"
             >
               <Phone className="w-4 h-4" />
               <span className="font-semibold">+91 98765 43210</span>
@@ -137,7 +137,7 @@ export default function Navigation() {
             
             <button
               type="button"
-              className="lg:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-200"
+              className="lg:hidden p-2 rounded-lg text-neutral-dark hover:bg-neutral/20"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? (
@@ -167,8 +167,8 @@ export default function Navigation() {
                       className={cn(
                         "block px-4 py-2 rounded-lg font-medium transition-colors duration-200",
                         isActive(item.href)
-                          ? "text-[#003366] bg-[#003366]/10"
-                          : "text-gray-700 hover:text-[#003366] hover:bg-[#003366]/5"
+                          ? "text-primary bg-primary/10"
+                          : "text-neutral-dark hover:text-primary hover:bg-primary/5"
                       )}
                       onClick={() => !item.dropdown && setMobileMenuOpen(false)}
                     >
@@ -182,7 +182,7 @@ export default function Navigation() {
                           <Link
                             key={subItem.name}
                             href={subItem.href}
-                            className="block px-4 py-2 text-sm text-gray-700 hover:text-[#003366] hover:bg-[#003366]/5 rounded-lg transition-colors duration-200"
+                            className="block px-4 py-2 text-sm text-neutral-dark hover:text-primary hover:bg-primary/5 rounded-lg transition-colors duration-200"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {subItem.name}

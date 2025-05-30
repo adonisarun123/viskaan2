@@ -18,8 +18,8 @@ const services = [
     title: "Facility Management",
     description: "Comprehensive facility solutions including housekeeping, pest control, waste management, and technical services.",
     href: "/services/facility-management",
-    color: "text-[#003366]",
-    bgColor: "bg-[#003366]/10",
+    color: "text-primary",
+    bgColor: "bg-primary/10",
   },
   {
     icon: Shield,
@@ -90,12 +90,12 @@ export default function ServicesOverview() {
               transition={{ delay: index * 0.1 }}
             >
               <Link href={service.href} className="block h-full">
-                <div className="card h-full flex flex-col group hover:border-[#003366]/20 transition-all duration-300">
+                <div className="card h-full flex flex-col group hover:border-primary/20 transition-all duration-300">
                   <div className={`w-16 h-16 ${service.bgColor} rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <service.icon className={`w-8 h-8 ${service.color}`} />
                   </div>
                   
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>
+                  <h3 className="text-xl font-heading font-semibold mb-3 text-gray-800">
                     {service.title}
                   </h3>
                   
@@ -103,7 +103,7 @@ export default function ServicesOverview() {
                     {service.description}
                   </p>
                   
-                  <div className="flex items-center text-[#003366] font-medium group-hover:gap-3 transition-all duration-300">
+                  <div className="flex items-center text-primary font-medium group-hover:gap-3 transition-all duration-300">
                     Learn More
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </div>

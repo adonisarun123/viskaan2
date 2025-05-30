@@ -36,8 +36,8 @@ export default function ClientsSection() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4" style={{ fontFamily: 'Montserrat, system-ui, sans-serif' }}>Our Trusted Clients</h2>
-          <p className="text-lg md:text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+          <h2 className="section-heading">Our Trusted Clients</h2>
+          <p className="section-subheading">
             Serving India's leading corporates and institutions across diverse sectors 
             with excellence and commitment.
           </p>
@@ -81,7 +81,7 @@ export default function ClientsSection() {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-xl p-6 shadow-lg relative"
             >
-              <Quote className="absolute top-6 right-6 w-8 h-8 text-[#003366]/10" />
+              <Quote className="absolute top-6 right-6 w-8 h-8 text-primary/10" />
               <p className="text-gray-600 mb-6 italic">
                 "{testimonial.quote}"
               </p>
@@ -98,23 +98,23 @@ export default function ClientsSection() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-16 bg-[#003366] rounded-2xl p-8 lg:p-12"
+          className="mt-16 bg-primary rounded-2xl p-8 lg:p-12"
         >
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center text-white">
             <div>
-              <div className="text-4xl font-bold text-[#FFB300] mb-2">500+</div>
+              <div className="text-4xl font-bold text-accent mb-2">500+</div>
               <div className="text-sm">Active Clients</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#FFB300] mb-2">95%</div>
+              <div className="text-4xl font-bold text-accent mb-2">95%</div>
               <div className="text-sm">Client Retention Rate</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#FFB300] mb-2">10+</div>
+              <div className="text-4xl font-bold text-accent mb-2">10+</div>
               <div className="text-sm">Industry Sectors</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-[#FFB300] mb-2">25+</div>
+              <div className="text-4xl font-bold text-accent mb-2">25+</div>
               <div className="text-sm">Years of Trust</div>
             </div>
           </div>
